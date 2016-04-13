@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bkgnClr">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/name_description"
+        android:id="@+id/settings_name_desc"
+        android:textColor="#FFFFFF"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/enter_name"
+        android:ems="10"
+        android:id="@+id/settings_name"
+        android:background="#FFFFFF" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enter_ble_tag"
+        android:textColor="#FFFFFF"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="text"
+        android:text="@string/ble_tag_description"
+        android:ems="10"
+        android:id="@+id/settings_bleTag"
+        android:background="#FFFFFF"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/save_settings_button"
+        android:text="@string/save_settings_button_text" />
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Controls and Info Section -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/game_play_controls_info_layout">
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="60"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Quick Game Explanation Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_play"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/capture_play_quick_explanation"/>
+
+            <!-- My Team Number Display -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/captureLimeGreen"
+                    android:text="@string/my_team_number"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/captureLimeGreen"
+                    android:id="@+id/my_team_number"/>
+                <!-- End My Team Number Display -->
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="40"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <!-- Time Remaining Display -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_gravity="right"
+                android:text="@string/time_remaining"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp"
+                    android:id="@+id/remaining_game_time"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25sp"
+                    android:text="@string/secs"/>
+            </LinearLayout>
+            <!-- End Time Remaining Display -->
+            <!-- Cancel Game Button -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/end_game_button_text"
+                android:id="@+id/end_game_play_button"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Display ONE Winning Team -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:id="@+id/game_play_winning_team_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:text="@string/team_winner"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:id="@+id/game_play_winning_team"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:text="@string/wins"/>
+    </LinearLayout>
+
+    <!-- Display TIE -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:id="@+id/game_play_tie_results_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:text="@string/winner_tie_text"/>
+    </LinearLayout>
+
+    <!-- Team/Nodes Captured Breakdown -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- List of Teams and Node Count -->
+        <!-- Teams will be added programmatically to this list -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/team_number_list"/>
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/num_nodes_list"/>
+        </LinearLayout>
+        <View style="@style/Divider" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/game_play_team_nodes_captured_layout">
+
+                <!-- Add team numbers and node count values here -->
+
+
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/end_game_button_text"
+            android:visibility="gone"
+            android:id="@+id/capture_end_game_button"/>
+    </LinearLayout>
+</LinearLayout>

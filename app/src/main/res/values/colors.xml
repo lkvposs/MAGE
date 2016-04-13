@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#204a87</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bkgnClr">#B40404</color>
+    <color name="captureTheNodes">#CEE3F6</color>
+    <color name="captureLimeGreen">#abca39</color>
+    <color name="primary_dark_material_light_1">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="primary_material_light">#970e0e</color>
+    <color name="primary_text_default_material_light">#deffffff</color>
+
+    <color name="bopIt">#f79d25</color>
+    <color name="bopIt_NFC">#9723BC</color>
+    <color name="bopIt_shake">#A8FFE5</color>
+    <color name="bopIt_detect">#38B81E</color>
+    <color name="bopIt_flip">#FA2204</color>
+    <color name="bopIt_button">#1E3AB8</color>
+</resources>

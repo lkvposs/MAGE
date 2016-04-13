@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="60dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/game_request_info" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept_game_button"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/accept_game_request_id"
+        android:onClick="acceptRequest"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ignore_game_button"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ignore_game_request_id"
+        android:onClick="ignoreRequest"/>
+</LinearLayout>

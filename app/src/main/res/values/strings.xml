@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">MAGE</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_active_configuration">Active Configuration</string>
+    <string name="title_activity_passive_configuration">Passive Configuration</string>
+    <string name="title_activity_game_play">Game Play</string>
+
+    <!-- BLE Connect -->
+    <string name="please_wait_for_connection">Please wait for a BLE connection to be established.</string>
+    <string name="warning_if_quit">This may take a moment. If something goes wrong during the connection setup, the app will close and relaunch itself. If nothing happens for a prolonged period of time, press the Relaunch button below.</string>
+    <string name="relaunch">Relaunch</string>
+    <string name="trying_to_connect_to">Trying to connect to device:</string>
+    <string name="discovered_BLE_devices">Discovered BLE devices:</string>
+
+    <!-- Home Menu Fragment -->
+    <string name="select_game_button">Play a Game</string>
+    <string name="game_request_button">Receive a Game Request</string>
+    <string name="home_settings_button">Settings</string>
+    <string name="reset_nodes_button">Reset Nodes</string>
+    <string name="test_ble">Test BLE</string>
+    <string name="test_xbee">Test XBee</string>
+    <string name="wifi_disabled_title">WiFi Disabled</string>
+    <string name="wifi_disabled_message">Please consider turning on WiFi for this device. It is needed for web reporting in certain games. If WiFi is obviously not available in your location, feel free to leave it off.</string>
+    <string name="wifi_disabled_positive_button">Turn On WiFi</string>
+
+    <!-- Game Requests Dialog -->
+    <string name="accept_game_button">Accept</string>
+    <string name="ignore_game_button">Ignore</string>
+
+    <!-- Main Settings -->
+    <string name="enter_name">Enter your name</string>
+    <string name="name_description">Username</string>
+    <string name="enter_ble_tag">Enter the name of your BLE XBee shield</string>
+    <string name="ble_tag_description">BLE ID</string>
+    <string name="save_settings_button_text">Save</string>
+
+    <!-- Game Menu Fragment -->
+    <string name="select_game">Select a Game</string>
+    <string name="game_desc_text">Select a game to view its description</string>
+    <string name="play_button_text">Play</string>
+
+    <!-- Active Configuration Capture the Nodes -->
+    <string name="active_config_header1_text">Active</string>
+    <string name="active_config_header2_text">Configuration</string>
+    <string name="active_config_progress_text_0">0% Configuration Completed</string>
+    <string name="active_config_progress_text_25">25% Configuration Completed</string>
+    <string name="active_config_progress_text_50">50% Configuration Completed</string>
+    <string name="active_config_progress_text_75">75% Configuration Completed</string>
+    <string name="active_config_progress_text_100">Configuration Completed!</string>
+    <string name="polling_players">Please wait while players are polled to join the game.</string>
+    <string name="polling_nodes">Please wait while nodes are polled for availability.</string>
+    <string name="num_players_joined_text">Players joined: </string>
+    <string name="num_joined_value_num">0</string>
+    <string name="num_nodes_joined_text">Nodes joined: </string>
+    <string name="enough_players_joined_text">When a sufficient number of players have joined the game, press the continue button below. After pressing the button, additional players will be unable to join.</string>
+    <string name="enough_nodes_joined_text">When a sufficient number of nodes have responded, click the button below to continue.</string>
+    <string name="TEMP_BUTTON_ACCPETANCE">Simulate Acceptance</string>
+    <string name="continue_configuration">Continue</string>
+    <string name="choose_game_params_instructions">Enter the desired parameters for your game of Capture the Nodes.</string>
+    <string name="game_duration_text_desc">Game Duration</string>
+    <string name="game_duration_text_hint">[minutes]</string>
+    <string name="num_teams_text_desc">Number of Teams</string>
+    <string name="submit">Submit</string>
+    <string name="polling_confirm_nodes_text">Please wait while each node confirms reception of the game parameters.</string>
+    <string name="abort_confirm_nodes_poll_text">If an excessive amount of time elapses without all nodes responding, press the abort button to try again and resend the necessary information.</string>
+    <string name="abort_button">Abort</string>
+    <string name="play_game_button_text">Play Game</string>
+
+    <!-- Alert Dialogs for Active Configuration of Capture the Nodes -->
+    <string name="incorrect_input_title">Input Error</string>
+    <string name="nonpositive_duration">The duration of the game must be greater than 0.</string>
+    <string name="nonpositive_num_teams">The number of teams entered must be greater than 0.</string>
+    <string name="nondivisible_num_teams">The number of players to have joined the game must be divisible by the number of teams entered.</string>
+
+    <!-- Passive Configuration Capture the Nodes -->
+    <string name="passive_config_header1">Passive</string>
+    <string name="waiting_for_game_params_passive_capture">Please wait while other users join the game and the configuring user enters the game parameters.</string>
+    <string name="waiting_for_nodes_passive_capture">Please wait while nodes are polled for their availability.</string>
+
+    <!-- No Game Found Dialog -->
+    <string name="no_game_found">Unfortunately, the requested game could not be found.</string>
+    <string name="ok">OK</string>
+
+    <!-- Game Play Capture the Nodes -->
+    <string name="NFC_not_enabled_title">NFC Not Enabled!</string>
+    <string name="NFC_not_enabled_message">NFC has not been enabled for this device. Until you enable NFC, you are an effectively useless player for this game.</string>
+    <string name="end_game_button_text">End Game</string>
+    <string name="end_game_dialog_title">Warning!</string>
+    <string name="end_game_dialog_message">Ending the game in this manner will force the game to end for all players. Are you sure you want to bail?</string>
+    <string name="capture_play_quick_explanation">Run around to discover nodes! When you find one, hold your phone against its NFC tag to get its data. The team with the most nodes when time runs out wins!</string>
+    <string name="my_team_number">My Team Number:</string>
+    <string name="time_remaining">Time Remaining:</string>
+    <string name="minutes">mins</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="team_number_list">Team Number</string>
+    <string name="num_nodes_list">Node Count</string>
+    <string name="team_winner">Team #</string>
+    <string name="wins"> WINS!</string>
+    <string name="winner_tie_text">There was a tie.</string>
+
+    <!-- Bluetooth -->
+    <string name="bluetooth_not_enabled_title">Bluetooth Disabled</string>
+    <string name="bluetooth_not_enabled_message">Please activate Bluetooth on this device in order to connect to the MAGE network.</string>
+    <string name="bluetooth_not_enabled_accept">Turn on Bluetooth</string>
+
+    <!-- Active Configuration of Bop It! -->
+    <string name="choose_params_explanation">Enter the length that each round of Bop It! will last. Then select the roles of the nodes.</string>
+    <string name="round_duration">Round Duration</string>
+    <string name="nfcscan_option">NFC Scan</string>
+    <string name="shake_option">Shake</string>
+    <string name="detect_option">Detect</string>
+    <string name="flip_option">Flip</string>
+    <string name="button_option">Button</string>
+    <string name="total_nodes_used_count">TOTAL</string>
+    <string name="choose_option">+</string>
+    <string name="remove_option">-</string>
+    <string name="no_selections_yet">0</string>
+    <string name="too_few_node_roles_selected">Not enough node roles were selected to play the game.</string>
+
+    <!-- Passive Configuration of Bop It! -->
+    <string name="progress_bar_text">Please wait while players and nodes join the game.</string>
+
+    <!-- Game Play Bop It! -->
+    <string name="your_turn_alert">It\'s your turn to play!</string>
+    <string name="begin_turn_instructions">Begin the round by pushing the button whenever you are ready.</string>
+    <string name="bopit_start_round_button_text">Start Round</string>
+    <string name="bopit_score">Score: </string>
+    <string name="no_action_yet">No Action Yet</string>
+    <string name="bopit_NFC">Scan It!</string>
+    <string name="bopit_shake">Shake It!</string>
+    <string name="bopit_detect">Trip It!</string>
+    <string name="bopit_flip">Flip It!</string>
+    <string name="bopit_button">Bop It!</string>
+    <string name="my_score">My Score: </string>
+    <string name="current_players_turn">Current Player\'s Turn:</string>
+    <string name="winning_user">The winner is:</string>
+    <string name="winning_score">with a score of</string>
+    <string name="secs">secs</string>
+
+    <!-- SharedPreferences Keys -->
+    <string name="pref_file">SharedPreferences File Name</string>
+    <string name="settings_username">username</string>
+    <string name="settings_BLEtag">bletag</string>
+
+</resources>

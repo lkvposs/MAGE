@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="polling_wheel" type="id">polling_wheel</item>
+    <item name="polling_text" type="id">polling_text</item>
+    <item name="temp_button" type="id">active_config_acceptance_temp_button</item>
+    <item name="temp_button_players" type="id">temp_button_players</item>
+    <item name="temp_button_nodes" type="id">temp_button_nodes</item>
+    <item name="enough_players_disclaimer" type="id">enough_players_disclaimer</item>
+    <item name="continue_configuration_button" type="id">continue_configuration_button</item>
+</resources>
